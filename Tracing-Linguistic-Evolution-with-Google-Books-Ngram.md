@@ -1,6 +1,6 @@
 # Tracing Linguistic Evolution with Google Books Ngram Viewer and Time-Aware Word Embeddings
 
-**⚠️ Data Requirements**: Requires Google Books Ngram data or historical text corpora
+⚠️ Data Requirements: Requires Google Books Ngram data or historical text corpora
 
 ## Introduction
 
@@ -10,10 +10,10 @@ Language is not static — it evolves in response to cultural, political, and te
 
 ### What Causes Words to Change Over Time?
 
-- **Political Events**: Words like *liberty* and *democracy* surged during revolutions
-- **Technological Advances**: *Cloud* meant one thing in 1900, something else in 2000
-- **Cultural Shifts**: Terms related to gender, race, identity evolved dramatically
-- **Media and Communication**: New words emerge through social media, older terms fade
+- Political Events: Words like *liberty* and *democracy* surged during revolutions
+- Technological Advances: *Cloud* meant one thing in 1900, something else in 2000
+- Cultural Shifts: Terms related to gender, race, identity evolved dramatically
+- Media and Communication: New words emerge through social media, older terms fade
 
 ## Tracking "Democracy" and "Liberty" in Google Books Ngram Viewer
 
@@ -29,9 +29,9 @@ democracy, liberty (1800-2019, English, case-insensitive)
 ### Step 2: Interpreting the Results
 
 The output shows:
-- **Steady increase** in *democracy* since late 18th century (American and French Revolutions)
-- **Spike in liberty** around 1860s (American Civil War) and 1940s (World War II)
-- **Decline** after Cold War as discourse shifted toward *globalization* and *human rights*
+- Steady increase in *democracy* since late 18th century (American and French Revolutions)
+- Spike in liberty around 1860s (American Civil War) and 1940s (World War II)
+- Decline after Cold War as discourse shifted toward *globalization* and *human rights*
 
 ### Step 3: Replicating Ngram Analysis in Python
 
@@ -64,7 +64,7 @@ plt.savefig("ngram_trends.png")
 plt.show()
 ```
 
-⚠️ **Note**: The `engram` library is unofficial. For production, use Google Ngram API or download datasets from https://storage.googleapis.com/books/ngrams/books/datasetsv3.html
+⚠️ Note: The `engram` library is unofficial. For production, use Google Ngram API or download datasets from https://storage.googleapis.com/books/ngrams/books/datasetsv3.html
 
 ## Understanding Semantic Drift with Time-Aware Word Embeddings
 
@@ -77,7 +77,7 @@ Semantic drift refers to how the meaning of words changes over time:
 
 ### Using Word Embeddings to Track Meaning
 
-A **word embedding** is a mathematical representation of a word based on its context. By training embeddings on historical texts from different time periods, we can see how meaning has changed.
+A word embedding is a mathematical representation of a word based on its context. By training embeddings on historical texts from different time periods, we can see how meaning has changed.
 
 ### Training Time-Aware Word Embeddings
 
@@ -110,27 +110,27 @@ print("1900s:", model_1900s.wv.most_similar("democracy", topn=5))
 print("2000s:", model_2000s.wv.most_similar("democracy", topn=5))
 ```
 
-**Example Output (Hypothetical)**:
-- **1800s**: ["republic", "constitution", "monarchy"]
-- **1900s**: ["freedom", "rights", "socialism"]
-- **2000s**: ["governance", "elections", "digital"]
+Example Output (Hypothetical):
+- 1800s: ["republic", "constitution", "monarchy"]
+- 1900s: ["freedom", "rights", "socialism"]
+- 2000s: ["governance", "elections", "digital"]
 
 This shows how *democracy* evolved from a governmental system to a rights-based ideology to a technological/digital term.
 
 ## Data Requirements for Production
 
-⚠️ **This analysis requires substantial historical text data**:
+⚠️ This analysis requires substantial historical text data:
 
 ### Data Sources
-- **Google Books Ngram Corpus**: https://storage.googleapis.com/books/ngrams/books/datasetsv3.html
-- **COHA (Corpus of Historical American English)**: https://www.english-corpora.org/coha/
-- **Project Gutenberg**: https://www.gutenberg.org/
-- **Internet Archive**: https://archive.org/details/texts
+- Google Books Ngram Corpus: https://storage.googleapis.com/books/ngrams/books/datasetsv3.html
+- COHA (Corpus of Historical American English): https://www.english-corpora.org/coha/
+- Project Gutenberg: https://www.gutenberg.org/
+- Internet Archive: https://archive.org/details/texts
 
 ### Processing Requirements
-- **Storage**: 100GB+ for full Google Ngram corpus
-- **Compute**: Word2Vec training requires significant CPU/GPU
-- **Memory**: 16GB+ RAM for large corpora
+- Storage: 100GB+ for full Google Ngram corpus
+- Compute: Word2Vec training requires significant CPU/GPU
+- Memory: 16GB+ RAM for large corpora
 
 ## Applications
 
@@ -149,8 +149,8 @@ Analyze rhetoric changes over time
 ## Key Insights
 
 ### Democracy and Liberty
-- **Democracy** gained prominence in late 19th century, peaked during Cold War
-- **Liberty** had sharp peak during American Revolution and civil rights movements
+- Democracy gained prominence in late 19th century, peaked during Cold War
+- Liberty had sharp peak during American Revolution and civil rights movements
 
 ### Semantic Drift
 - Words shift meaning in response to historical events
@@ -175,9 +175,9 @@ Analyze rhetoric changes over time
 ## Conclusion
 
 In this chapter, we explored:
-- ✓ **Google Books Ngram Viewer** to track word frequency over centuries
-- ✓ **Semantic drift** to understand how meanings change
-- ✓ **Time-aware word embeddings** to model linguistic evolution
+- ✓ Google Books Ngram Viewer to track word frequency over centuries
+- ✓ Semantic drift to understand how meanings change
+- ✓ Time-aware word embeddings to model linguistic evolution
 
 This methodology can be applied to other words like *freedom*, *justice*, *capitalism*, *feminism*, etc.
 
@@ -189,11 +189,11 @@ This methodology can be applied to other words like *freedom*, *justice*, *capit
 
 ## Resources
 
-- **Google Books Ngram Viewer**: https://books.google.com/ngrams
-- **Gensim Documentation**: https://radimrehurek.com/gensim/
-- **COHA Corpus**: https://www.english-corpora.org/coha/
-- **Historical Text Processing**: https://programminghistorian.org/
+- Google Books Ngram Viewer: https://books.google.com/ngrams
+- Gensim Documentation: https://radimrehurek.com/gensim/
+- COHA Corpus: https://www.english-corpora.org/coha/
+- Historical Text Processing: https://programminghistorian.org/
 
 ---
 
-**Note**: This article demonstrates concepts. Production analysis requires substantial computational resources and historical text corpora.
+Note: This article demonstrates concepts. Production analysis requires substantial computational resources and historical text corpora.
