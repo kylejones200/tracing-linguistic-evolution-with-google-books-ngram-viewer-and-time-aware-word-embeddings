@@ -11,14 +11,7 @@ Language is not static — it evolves in response to cultural, political, and te
 
 By the end, you’ll have a workflow for combining time-series analysis with computational linguistics to study language evolution.
 
-## About
 
-Place the code for this article in this repository.
-The original article export is saved as `article.md`.
-
-## Files
-
-Add your `.ipynb`, `.py`, `.yaml`, `.js`, `.ts`, or other project files here.
 
 ## Disclaimer
 
